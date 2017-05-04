@@ -1,0 +1,4564 @@
+{
+  "characteristics_list": [
+    {
+      "compile": {
+        "compilation_success": "yes", 
+        "compilation_success_bool": true, 
+        "compilation_time": 0.01801609992980957, 
+        "compilation_time_with_module": 1.1846449375152588, 
+        "joined_compiler_flags": "", 
+        "program_git_hash": "43930beba2aa16995b127fe7be131585b5a130aa"
+      }, 
+      "run": {
+        "REAL_ENV_CK_CAFFE_BATCH_SIZE": 2, 
+        "REAL_ENV_CK_CAFFE_ITERATIONS": 25000, 
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-caffe/program/caffe/tmp/tmp-Xc2UmX.prototxt", 
+        "execution_time": 0.0, 
+        "execution_time_with_module": 2.7958381175994873, 
+        "memory_bytes": 106120408, 
+        "memory_kbytes": 106120.408, 
+        "memory_mbytes": 106.120408, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.004096, 
+            "time_s": 4.096e-06, 
+            "timestamp": "1103 15:17:47.889410"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.001152, 
+            "time_s": 1.1520000000000002e-06, 
+            "timestamp": "1103 15:17:47.889415"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 0.282784, 
+            "time_s": 0.000282784, 
+            "timestamp": "1103 15:17:47.889418"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 0.641024, 
+            "time_s": 0.000641024, 
+            "timestamp": "1103 15:17:47.889422"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 0.1024, 
+            "time_s": 0.00010240000000000001, 
+            "timestamp": "1103 15:17:47.889425"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 0.001792, 
+            "time_s": 1.792e-06, 
+            "timestamp": "1103 15:17:47.889428"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 0.089696, 
+            "time_s": 8.9696e-05, 
+            "timestamp": "1103 15:17:47.889431"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 0.001056, 
+            "time_s": 1.0560000000000001e-06, 
+            "timestamp": "1103 15:17:47.889434"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 0.050208, 
+            "time_s": 5.0208000000000004e-05, 
+            "timestamp": "1103 15:17:47.889437"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 0.16896, 
+            "time_s": 0.00016896, 
+            "timestamp": "1103 15:17:47.889441"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 0.009216, 
+            "time_s": 9.216000000000001e-06, 
+            "timestamp": "1103 15:17:47.889444"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889447"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001984, 
+            "time_s": 1.984e-06, 
+            "timestamp": "1103 15:17:47.889451"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001856, 
+            "time_s": 1.856e-06, 
+            "timestamp": "1103 15:17:47.889453"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 0.043936, 
+            "time_s": 4.3936e-05, 
+            "timestamp": "1103 15:17:47.889456"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 0.35664, 
+            "time_s": 0.00035664000000000003, 
+            "timestamp": "1103 15:17:47.889459"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 0.010656, 
+            "time_s": 1.0656000000000001e-05, 
+            "timestamp": "1103 15:17:47.889462"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:47.889466"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 0.068064, 
+            "time_s": 6.8064e-05, 
+            "timestamp": "1103 15:17:47.889468"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 0.339968, 
+            "time_s": 0.000339968, 
+            "timestamp": "1103 15:17:47.889472"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 0.011488, 
+            "time_s": 1.1488e-05, 
+            "timestamp": "1103 15:17:47.889474"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:47.889477"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 0.035104, 
+            "time_s": 3.5104e-05, 
+            "timestamp": "1103 15:17:47.889480"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 0.228352, 
+            "time_s": 0.000228352, 
+            "timestamp": "1103 15:17:47.889483"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 0.054272, 
+            "time_s": 5.4272000000000005e-05, 
+            "timestamp": "1103 15:17:47.889487"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 0.134272, 
+            "time_s": 0.000134272, 
+            "timestamp": "1103 15:17:47.889489"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 0.008544, 
+            "time_s": 8.544e-06, 
+            "timestamp": "1103 15:17:47.889492"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 0.0016, 
+            "time_s": 1.6000000000000001e-06, 
+            "timestamp": "1103 15:17:47.889495"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.00128, 
+            "time_s": 1.28e-06, 
+            "timestamp": "1103 15:17:47.889498"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001696, 
+            "time_s": 1.6960000000000002e-06, 
+            "timestamp": "1103 15:17:47.889502"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 0.042592, 
+            "time_s": 4.2592e-05, 
+            "timestamp": "1103 15:17:47.889504"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 0.36352, 
+            "time_s": 0.00036352000000000004, 
+            "timestamp": "1103 15:17:47.889508"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 0.01024, 
+            "time_s": 1.024e-05, 
+            "timestamp": "1103 15:17:47.889510"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 0.001376, 
+            "time_s": 1.376e-06, 
+            "timestamp": "1103 15:17:47.889513"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 0.066304, 
+            "time_s": 6.630400000000001e-05, 
+            "timestamp": "1103 15:17:47.889518"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 0.338944, 
+            "time_s": 0.00033894400000000004, 
+            "timestamp": "1103 15:17:47.889519"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 0.010976, 
+            "time_s": 1.0976e-05, 
+            "timestamp": "1103 15:17:47.889523"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 0.001312, 
+            "time_s": 1.312e-06, 
+            "timestamp": "1103 15:17:47.889525"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 0.033984, 
+            "time_s": 3.3984e-05, 
+            "timestamp": "1103 15:17:47.889528"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 0.223808, 
+            "time_s": 0.000223808, 
+            "timestamp": "1103 15:17:47.889531"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: fire4/squeeze1x1", 
+            "time_ms": 0.055872, 
+            "time_s": 5.5871999999999996e-05, 
+            "timestamp": "1103 15:17:47.889534"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 20, 
+            "label": "20: fire4/squeeze1x1", 
+            "time_ms": 0.137216, 
+            "time_s": 0.000137216, 
+            "timestamp": "1103 15:17:47.889541"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: fire4/relu_squeeze1x1", 
+            "time_ms": 0.009216, 
+            "time_s": 9.216000000000001e-06, 
+            "timestamp": "1103 15:17:47.889550"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 21, 
+            "label": "21: fire4/relu_squeeze1x1", 
+            "time_ms": 0.001632, 
+            "time_s": 1.632e-06, 
+            "timestamp": "1103 15:17:47.889554"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001472, 
+            "time_s": 1.472e-06, 
+            "timestamp": "1103 15:17:47.889557"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 22, 
+            "label": "22: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889560"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: fire4/expand1x1", 
+            "time_ms": 0.077952, 
+            "time_s": 7.7952e-05, 
+            "timestamp": "1103 15:17:47.889564"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 23, 
+            "label": "23: fire4/expand1x1", 
+            "time_ms": 0.3416, 
+            "time_s": 0.0003416, 
+            "timestamp": "1103 15:17:47.889566"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: fire4/relu_expand1x1", 
+            "time_ms": 0.029696, 
+            "time_s": 2.9696e-05, 
+            "timestamp": "1103 15:17:47.889569"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 24, 
+            "label": "24: fire4/relu_expand1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889572"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: fire4/expand3x3", 
+            "time_ms": 0.14416, 
+            "time_s": 0.00014416, 
+            "timestamp": "1103 15:17:47.889575"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 25, 
+            "label": "25: fire4/expand3x3", 
+            "time_ms": 0.623456, 
+            "time_s": 0.000623456, 
+            "timestamp": "1103 15:17:47.889578"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: fire4/relu_expand3x3", 
+            "time_ms": 0.028832, 
+            "time_s": 2.8832e-05, 
+            "timestamp": "1103 15:17:47.889581"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 26, 
+            "label": "26: fire4/relu_expand3x3", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889585"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: fire4/concat", 
+            "time_ms": 0.060448, 
+            "time_s": 6.0448e-05, 
+            "timestamp": "1103 15:17:47.889587"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 27, 
+            "label": "27: fire4/concat", 
+            "time_ms": 0.238304, 
+            "time_s": 0.000238304, 
+            "timestamp": "1103 15:17:47.889590"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: pool4", 
+            "time_ms": 0.064224, 
+            "time_s": 6.4224e-05, 
+            "timestamp": "1103 15:17:47.889593"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 28, 
+            "label": "28: pool4", 
+            "time_ms": 0.001824, 
+            "time_s": 1.8240000000000002e-06, 
+            "timestamp": "1103 15:17:47.889596"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 0.060864, 
+            "time_s": 6.0864000000000005e-05, 
+            "timestamp": "1103 15:17:47.889600"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 0.095232, 
+            "time_s": 9.5232e-05, 
+            "timestamp": "1103 15:17:47.889602"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 0.008512, 
+            "time_s": 8.512e-06, 
+            "timestamp": "1103 15:17:47.889605"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 0.000896, 
+            "time_s": 8.96e-07, 
+            "timestamp": "1103 15:17:47.889608"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.00144, 
+            "time_s": 1.4400000000000002e-06, 
+            "timestamp": "1103 15:17:47.889611"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001632, 
+            "time_s": 1.632e-06, 
+            "timestamp": "1103 15:17:47.889614"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 0.04032, 
+            "time_s": 4.032e-05, 
+            "timestamp": "1103 15:17:47.889617"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 0.093984, 
+            "time_s": 9.3984e-05, 
+            "timestamp": "1103 15:17:47.889621"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 0.008448, 
+            "time_s": 8.448000000000001e-06, 
+            "timestamp": "1103 15:17:47.889623"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 0.001088, 
+            "time_s": 1.088e-06, 
+            "timestamp": "1103 15:17:47.889626"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 0.057344, 
+            "time_s": 5.7344e-05, 
+            "timestamp": "1103 15:17:47.889629"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 0.334208, 
+            "time_s": 0.000334208, 
+            "timestamp": "1103 15:17:47.889632"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 0.00832, 
+            "time_s": 8.32e-06, 
+            "timestamp": "1103 15:17:47.889636"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 0.001408, 
+            "time_s": 1.408e-06, 
+            "timestamp": "1103 15:17:47.889638"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 0.02048, 
+            "time_s": 2.048e-05, 
+            "timestamp": "1103 15:17:47.889642"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 0.217088, 
+            "time_s": 0.00021708800000000002, 
+            "timestamp": "1103 15:17:47.889644"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: fire6/squeeze1x1", 
+            "time_ms": 0.065536, 
+            "time_s": 6.5536e-05, 
+            "timestamp": "1103 15:17:47.889647"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 37, 
+            "label": "37: fire6/squeeze1x1", 
+            "time_ms": 0.110592, 
+            "time_s": 0.000110592, 
+            "timestamp": "1103 15:17:47.889650"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: fire6/relu_squeeze1x1", 
+            "time_ms": 0.008832, 
+            "time_s": 8.832e-06, 
+            "timestamp": "1103 15:17:47.889653"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 38, 
+            "label": "38: fire6/relu_squeeze1x1", 
+            "time_ms": 0.001664, 
+            "time_s": 1.6639999999999999e-06, 
+            "timestamp": "1103 15:17:47.889657"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 39, 
+            "label": "39: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:47.889659"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 39, 
+            "label": "39: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889662"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 40, 
+            "label": "40: fire6/expand1x1", 
+            "time_ms": 0.062464, 
+            "time_s": 6.2464e-05, 
+            "timestamp": "1103 15:17:47.889665"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 40, 
+            "label": "40: fire6/expand1x1", 
+            "time_ms": 0.307968, 
+            "time_s": 0.00030796800000000004, 
+            "timestamp": "1103 15:17:47.889668"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 41, 
+            "label": "41: fire6/relu_expand1x1", 
+            "time_ms": 0.00944, 
+            "time_s": 9.440000000000001e-06, 
+            "timestamp": "1103 15:17:47.889672"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 41, 
+            "label": "41: fire6/relu_expand1x1", 
+            "time_ms": 0.001632, 
+            "time_s": 1.632e-06, 
+            "timestamp": "1103 15:17:47.889674"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 42, 
+            "label": "42: fire6/expand3x3", 
+            "time_ms": 0.074944, 
+            "time_s": 7.494399999999999e-05, 
+            "timestamp": "1103 15:17:47.889678"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 42, 
+            "label": "42: fire6/expand3x3", 
+            "time_ms": 0.18944, 
+            "time_s": 0.00018944, 
+            "timestamp": "1103 15:17:47.889680"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 43, 
+            "label": "43: fire6/relu_expand3x3", 
+            "time_ms": 0.009312, 
+            "time_s": 9.312000000000002e-06, 
+            "timestamp": "1103 15:17:47.889683"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 43, 
+            "label": "43: fire6/relu_expand3x3", 
+            "time_ms": 0.00192, 
+            "time_s": 1.9200000000000003e-06, 
+            "timestamp": "1103 15:17:47.889686"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 44, 
+            "label": "44: fire6/concat", 
+            "time_ms": 0.027648, 
+            "time_s": 2.7648e-05, 
+            "timestamp": "1103 15:17:47.889693"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 44, 
+            "label": "44: fire6/concat", 
+            "time_ms": 0.230144, 
+            "time_s": 0.000230144, 
+            "timestamp": "1103 15:17:47.889699"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 45, 
+            "label": "45: fire7/squeeze1x1", 
+            "time_ms": 0.0888, 
+            "time_s": 8.88e-05, 
+            "timestamp": "1103 15:17:47.889703"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 45, 
+            "label": "45: fire7/squeeze1x1", 
+            "time_ms": 0.147456, 
+            "time_s": 0.00014745600000000002, 
+            "timestamp": "1103 15:17:47.889705"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 46, 
+            "label": "46: fire7/relu_squeeze1x1", 
+            "time_ms": 0.008192, 
+            "time_s": 8.192e-06, 
+            "timestamp": "1103 15:17:47.889708"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 46, 
+            "label": "46: fire7/relu_squeeze1x1", 
+            "time_ms": 0.000992, 
+            "time_s": 9.92e-07, 
+            "timestamp": "1103 15:17:47.889711"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 47, 
+            "label": "47: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001792, 
+            "time_s": 1.792e-06, 
+            "timestamp": "1103 15:17:47.889714"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 47, 
+            "label": "47: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889717"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 48, 
+            "label": "48: fire7/expand1x1", 
+            "time_ms": 0.058688, 
+            "time_s": 5.8688e-05, 
+            "timestamp": "1103 15:17:47.889720"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 48, 
+            "label": "48: fire7/expand1x1", 
+            "time_ms": 0.308064, 
+            "time_s": 0.00030806400000000004, 
+            "timestamp": "1103 15:17:47.889724"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 49, 
+            "label": "49: fire7/relu_expand1x1", 
+            "time_ms": 0.009248, 
+            "time_s": 9.248e-06, 
+            "timestamp": "1103 15:17:47.889726"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 49, 
+            "label": "49: fire7/relu_expand1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889729"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 50, 
+            "label": "50: fire7/expand3x3", 
+            "time_ms": 0.074752, 
+            "time_s": 7.4752e-05, 
+            "timestamp": "1103 15:17:47.889732"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 50, 
+            "label": "50: fire7/expand3x3", 
+            "time_ms": 0.189184, 
+            "time_s": 0.00018918399999999998, 
+            "timestamp": "1103 15:17:47.889735"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 51, 
+            "label": "51: fire7/relu_expand3x3", 
+            "time_ms": 0.010048, 
+            "time_s": 1.0048e-05, 
+            "timestamp": "1103 15:17:47.889739"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 51, 
+            "label": "51: fire7/relu_expand3x3", 
+            "time_ms": 0.00112, 
+            "time_s": 1.1199999999999999e-06, 
+            "timestamp": "1103 15:17:47.889741"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 52, 
+            "label": "52: fire7/concat", 
+            "time_ms": 0.028512, 
+            "time_s": 2.8512e-05, 
+            "timestamp": "1103 15:17:47.889744"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 52, 
+            "label": "52: fire7/concat", 
+            "time_ms": 0.2184, 
+            "time_s": 0.00021840000000000002, 
+            "timestamp": "1103 15:17:47.889747"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 53, 
+            "label": "53: fire8/squeeze1x1", 
+            "time_ms": 0.089088, 
+            "time_s": 8.9088e-05, 
+            "timestamp": "1103 15:17:47.889750"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 53, 
+            "label": "53: fire8/squeeze1x1", 
+            "time_ms": 0.146016, 
+            "time_s": 0.000146016, 
+            "timestamp": "1103 15:17:47.889753"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 54, 
+            "label": "54: fire8/relu_squeeze1x1", 
+            "time_ms": 0.010176, 
+            "time_s": 1.0175999999999999e-05, 
+            "timestamp": "1103 15:17:47.889756"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 54, 
+            "label": "54: fire8/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889760"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 55, 
+            "label": "55: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.002016, 
+            "time_s": 2.016e-06, 
+            "timestamp": "1103 15:17:47.889762"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 55, 
+            "label": "55: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.00176, 
+            "time_s": 1.76e-06, 
+            "timestamp": "1103 15:17:47.889765"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 56, 
+            "label": "56: fire8/expand1x1", 
+            "time_ms": 0.099328, 
+            "time_s": 9.9328e-05, 
+            "timestamp": "1103 15:17:47.889768"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 56, 
+            "label": "56: fire8/expand1x1", 
+            "time_ms": 0.30848, 
+            "time_s": 0.00030848, 
+            "timestamp": "1103 15:17:47.889771"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 57, 
+            "label": "57: fire8/relu_expand1x1", 
+            "time_ms": 0.01072, 
+            "time_s": 1.072e-05, 
+            "timestamp": "1103 15:17:47.889775"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 57, 
+            "label": "57: fire8/relu_expand1x1", 
+            "time_ms": 0.001984, 
+            "time_s": 1.984e-06, 
+            "timestamp": "1103 15:17:47.889777"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 58, 
+            "label": "58: fire8/expand3x3", 
+            "time_ms": 0.1136, 
+            "time_s": 0.00011360000000000001, 
+            "timestamp": "1103 15:17:47.889780"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 58, 
+            "label": "58: fire8/expand3x3", 
+            "time_ms": 0.461824, 
+            "time_s": 0.000461824, 
+            "timestamp": "1103 15:17:47.889783"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 59, 
+            "label": "59: fire8/relu_expand3x3", 
+            "time_ms": 0.011936, 
+            "time_s": 1.1936e-05, 
+            "timestamp": "1103 15:17:47.889786"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 59, 
+            "label": "59: fire8/relu_expand3x3", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:47.889789"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 60, 
+            "label": "60: fire8/concat", 
+            "time_ms": 0.03408, 
+            "time_s": 3.408e-05, 
+            "timestamp": "1103 15:17:47.889792"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 60, 
+            "label": "60: fire8/concat", 
+            "time_ms": 0.231424, 
+            "time_s": 0.00023142399999999999, 
+            "timestamp": "1103 15:17:47.889796"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 61, 
+            "label": "61: pool8", 
+            "time_ms": 0.037888, 
+            "time_s": 3.7888e-05, 
+            "timestamp": "1103 15:17:47.889798"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 61, 
+            "label": "61: pool8", 
+            "time_ms": 0.00192, 
+            "time_s": 1.9200000000000003e-06, 
+            "timestamp": "1103 15:17:47.889801"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 0.0912, 
+            "time_s": 9.120000000000001e-05, 
+            "timestamp": "1103 15:17:47.889804"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 0.099072, 
+            "time_s": 9.907199999999999e-05, 
+            "timestamp": "1103 15:17:47.889807"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.009024, 
+            "time_s": 9.024e-06, 
+            "timestamp": "1103 15:17:47.889811"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889813"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001984, 
+            "time_s": 1.984e-06, 
+            "timestamp": "1103 15:17:47.889816"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001888, 
+            "time_s": 1.888e-06, 
+            "timestamp": "1103 15:17:47.889820"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 0.048128, 
+            "time_s": 4.8128e-05, 
+            "timestamp": "1103 15:17:47.889823"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 0.08192, 
+            "time_s": 8.192e-05, 
+            "timestamp": "1103 15:17:47.889827"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 0.00832, 
+            "time_s": 8.32e-06, 
+            "timestamp": "1103 15:17:47.889829"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 0.001792, 
+            "time_s": 1.792e-06, 
+            "timestamp": "1103 15:17:47.889832"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 0.057344, 
+            "time_s": 5.7344e-05, 
+            "timestamp": "1103 15:17:47.889835"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 0.166784, 
+            "time_s": 0.00016678399999999998, 
+            "timestamp": "1103 15:17:47.889839"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 0.008896, 
+            "time_s": 8.896e-06, 
+            "timestamp": "1103 15:17:47.889847"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889849"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 0.015008, 
+            "time_s": 1.5008000000000001e-05, 
+            "timestamp": "1103 15:17:47.889853"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 0.0216, 
+            "time_s": 2.1600000000000003e-05, 
+            "timestamp": "1103 15:17:47.889855"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 0.018912, 
+            "time_s": 1.8912e-05, 
+            "timestamp": "1103 15:17:47.889858"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 0.001376, 
+            "time_s": 1.376e-06, 
+            "timestamp": "1103 15:17:47.889861"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 0.13824, 
+            "time_s": 0.00013824, 
+            "timestamp": "1103 15:17:47.889864"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 1.68832, 
+            "time_s": 0.00168832, 
+            "timestamp": "1103 15:17:47.889868"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 0.014144, 
+            "time_s": 1.4144e-05, 
+            "timestamp": "1103 15:17:47.889870"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:47.889873"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 0.017408, 
+            "time_s": 1.7408e-05, 
+            "timestamp": "1103 15:17:47.889876"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 0.00176, 
+            "time_s": 1.76e-06, 
+            "timestamp": "1103 15:17:47.889879"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 0.012736, 
+            "time_s": 1.2736000000000001e-05, 
+            "timestamp": "1103 15:17:47.889883"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:47.889885"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 10.2691, 
+        "time_bw_s": 0.0102691, 
+        "time_fw_ms": 3.4304, 
+        "time_fw_s": 0.0034304, 
+        "time_fwbw_ms": 14.2326, 
+        "time_fwbw_s": 0.0142326, 
+        "time_total_ms": 14.2326, 
+        "time_total_ms_kernel_0": 14.2326, 
+        "time_total_s": 0.0142326, 
+        "time_total_s_kernel_0": 0.0142326, 
+        "total_execution_time": 0.0
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_BATCH_SIZE": 2, 
+        "REAL_ENV_CK_CAFFE_ITERATIONS": 25000, 
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-caffe/program/caffe/tmp/tmp-e1yMlR.prototxt", 
+        "execution_time": 0.0, 
+        "execution_time_with_module": 2.8105239868164062, 
+        "memory_bytes": 106120408, 
+        "memory_kbytes": 106120.408, 
+        "memory_mbytes": 106.120408, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.003136, 
+            "time_s": 3.136e-06, 
+            "timestamp": "1103 15:17:50.941746"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.001792, 
+            "time_s": 1.792e-06, 
+            "timestamp": "1103 15:17:50.941751"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 0.280736, 
+            "time_s": 0.000280736, 
+            "timestamp": "1103 15:17:50.941754"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 0.640192, 
+            "time_s": 0.000640192, 
+            "timestamp": "1103 15:17:50.941758"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 0.1008, 
+            "time_s": 0.0001008, 
+            "timestamp": "1103 15:17:50.941761"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.941764"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 0.089088, 
+            "time_s": 8.9088e-05, 
+            "timestamp": "1103 15:17:50.941767"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 0.001344, 
+            "time_s": 1.344e-06, 
+            "timestamp": "1103 15:17:50.941771"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 0.050624, 
+            "time_s": 5.0624e-05, 
+            "timestamp": "1103 15:17:50.941773"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 0.169984, 
+            "time_s": 0.000169984, 
+            "timestamp": "1103 15:17:50.941776"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 0.009248, 
+            "time_s": 9.248e-06, 
+            "timestamp": "1103 15:17:50.941779"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.941782"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001824, 
+            "time_s": 1.8240000000000002e-06, 
+            "timestamp": "1103 15:17:50.941787"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.941789"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 0.043136, 
+            "time_s": 4.3136e-05, 
+            "timestamp": "1103 15:17:50.941792"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 0.359168, 
+            "time_s": 0.000359168, 
+            "timestamp": "1103 15:17:50.941795"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 0.011456, 
+            "time_s": 1.1456e-05, 
+            "timestamp": "1103 15:17:50.941798"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 0.001184, 
+            "time_s": 1.184e-06, 
+            "timestamp": "1103 15:17:50.941802"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 0.069632, 
+            "time_s": 6.9632e-05, 
+            "timestamp": "1103 15:17:50.941804"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 0.342368, 
+            "time_s": 0.000342368, 
+            "timestamp": "1103 15:17:50.941807"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 0.011392, 
+            "time_s": 1.1392e-05, 
+            "timestamp": "1103 15:17:50.941810"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 0.00176, 
+            "time_s": 1.76e-06, 
+            "timestamp": "1103 15:17:50.941813"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 0.034816, 
+            "time_s": 3.4816e-05, 
+            "timestamp": "1103 15:17:50.941817"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 0.225056, 
+            "time_s": 0.000225056, 
+            "timestamp": "1103 15:17:50.941819"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 0.055296, 
+            "time_s": 5.5296e-05, 
+            "timestamp": "1103 15:17:50.941823"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 0.137024, 
+            "time_s": 0.00013702400000000002, 
+            "timestamp": "1103 15:17:50.941825"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 0.009536, 
+            "time_s": 9.536e-06, 
+            "timestamp": "1103 15:17:50.941828"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.941831"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.00128, 
+            "time_s": 1.28e-06, 
+            "timestamp": "1103 15:17:50.941834"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001472, 
+            "time_s": 1.472e-06, 
+            "timestamp": "1103 15:17:50.941838"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 0.043104, 
+            "time_s": 4.3104000000000006e-05, 
+            "timestamp": "1103 15:17:50.941840"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 0.372384, 
+            "time_s": 0.000372384, 
+            "timestamp": "1103 15:17:50.941843"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 0.011264, 
+            "time_s": 1.1264e-05, 
+            "timestamp": "1103 15:17:50.941846"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 0.001728, 
+            "time_s": 1.728e-06, 
+            "timestamp": "1103 15:17:50.941849"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 0.067968, 
+            "time_s": 6.7968e-05, 
+            "timestamp": "1103 15:17:50.941854"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 0.339136, 
+            "time_s": 0.000339136, 
+            "timestamp": "1103 15:17:50.941855"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 0.011264, 
+            "time_s": 1.1264e-05, 
+            "timestamp": "1103 15:17:50.941859"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.941861"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 0.034784, 
+            "time_s": 3.4784000000000004e-05, 
+            "timestamp": "1103 15:17:50.941864"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 0.224256, 
+            "time_s": 0.00022425600000000002, 
+            "timestamp": "1103 15:17:50.941867"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: fire4/squeeze1x1", 
+            "time_ms": 0.05696, 
+            "time_s": 5.696e-05, 
+            "timestamp": "1103 15:17:50.941870"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 20, 
+            "label": "20: fire4/squeeze1x1", 
+            "time_ms": 0.136192, 
+            "time_s": 0.000136192, 
+            "timestamp": "1103 15:17:50.941877"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: fire4/relu_squeeze1x1", 
+            "time_ms": 0.009248, 
+            "time_s": 9.248e-06, 
+            "timestamp": "1103 15:17:50.941887"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 21, 
+            "label": "21: fire4/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.941890"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001184, 
+            "time_s": 1.184e-06, 
+            "timestamp": "1103 15:17:50.941893"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 22, 
+            "label": "22: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.00192, 
+            "time_s": 1.9200000000000003e-06, 
+            "timestamp": "1103 15:17:50.941896"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: fire4/expand1x1", 
+            "time_ms": 0.082944, 
+            "time_s": 8.294400000000001e-05, 
+            "timestamp": "1103 15:17:50.941900"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 23, 
+            "label": "23: fire4/expand1x1", 
+            "time_ms": 0.340992, 
+            "time_s": 0.00034099200000000003, 
+            "timestamp": "1103 15:17:50.941903"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: fire4/relu_expand1x1", 
+            "time_ms": 0.029632, 
+            "time_s": 2.9632e-05, 
+            "timestamp": "1103 15:17:50.941906"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 24, 
+            "label": "24: fire4/relu_expand1x1", 
+            "time_ms": 0.001984, 
+            "time_s": 1.984e-06, 
+            "timestamp": "1103 15:17:50.941910"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: fire4/expand3x3", 
+            "time_ms": 0.145152, 
+            "time_s": 0.000145152, 
+            "timestamp": "1103 15:17:50.941912"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 25, 
+            "label": "25: fire4/expand3x3", 
+            "time_ms": 0.625664, 
+            "time_s": 0.0006256640000000001, 
+            "timestamp": "1103 15:17:50.941915"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: fire4/relu_expand3x3", 
+            "time_ms": 0.030432, 
+            "time_s": 3.0432000000000003e-05, 
+            "timestamp": "1103 15:17:50.941918"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 26, 
+            "label": "26: fire4/relu_expand3x3", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.941921"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: fire4/concat", 
+            "time_ms": 0.06064, 
+            "time_s": 6.064e-05, 
+            "timestamp": "1103 15:17:50.941925"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 27, 
+            "label": "27: fire4/concat", 
+            "time_ms": 0.236544, 
+            "time_s": 0.00023654400000000002, 
+            "timestamp": "1103 15:17:50.941927"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: pool4", 
+            "time_ms": 0.063488, 
+            "time_s": 6.3488e-05, 
+            "timestamp": "1103 15:17:50.941931"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 28, 
+            "label": "28: pool4", 
+            "time_ms": 0.001248, 
+            "time_s": 1.248e-06, 
+            "timestamp": "1103 15:17:50.941933"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 0.061248, 
+            "time_s": 6.1248e-05, 
+            "timestamp": "1103 15:17:50.941936"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 0.095264, 
+            "time_s": 9.5264e-05, 
+            "timestamp": "1103 15:17:50.941939"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 0.009152, 
+            "time_s": 9.152e-06, 
+            "timestamp": "1103 15:17:50.941942"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.941946"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:50.941948"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001376, 
+            "time_s": 1.376e-06, 
+            "timestamp": "1103 15:17:50.941951"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 0.04112, 
+            "time_s": 4.112e-05, 
+            "timestamp": "1103 15:17:50.941954"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 0.093312, 
+            "time_s": 9.3312e-05, 
+            "timestamp": "1103 15:17:50.941957"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 0.008192, 
+            "time_s": 8.192e-06, 
+            "timestamp": "1103 15:17:50.941962"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 0.001408, 
+            "time_s": 1.408e-06, 
+            "timestamp": "1103 15:17:50.941964"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 0.058144, 
+            "time_s": 5.8144000000000004e-05, 
+            "timestamp": "1103 15:17:50.941967"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 0.339296, 
+            "time_s": 0.000339296, 
+            "timestamp": "1103 15:17:50.941970"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 0.009216, 
+            "time_s": 9.216000000000001e-06, 
+            "timestamp": "1103 15:17:50.941973"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 0.001632, 
+            "time_s": 1.632e-06, 
+            "timestamp": "1103 15:17:50.941977"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 0.020448, 
+            "time_s": 2.0448e-05, 
+            "timestamp": "1103 15:17:50.941979"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 0.21632, 
+            "time_s": 0.00021632000000000002, 
+            "timestamp": "1103 15:17:50.941982"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: fire6/squeeze1x1", 
+            "time_ms": 0.065344, 
+            "time_s": 6.5344e-05, 
+            "timestamp": "1103 15:17:50.941985"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 37, 
+            "label": "37: fire6/squeeze1x1", 
+            "time_ms": 0.110688, 
+            "time_s": 0.000110688, 
+            "timestamp": "1103 15:17:50.941988"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: fire6/relu_squeeze1x1", 
+            "time_ms": 0.008192, 
+            "time_s": 8.192e-06, 
+            "timestamp": "1103 15:17:50.941992"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 38, 
+            "label": "38: fire6/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.941994"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 39, 
+            "label": "39: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001952, 
+            "time_s": 1.952e-06, 
+            "timestamp": "1103 15:17:50.941998"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 39, 
+            "label": "39: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.00192, 
+            "time_s": 1.9200000000000003e-06, 
+            "timestamp": "1103 15:17:50.942000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 40, 
+            "label": "40: fire6/expand1x1", 
+            "time_ms": 0.064672, 
+            "time_s": 6.4672e-05, 
+            "timestamp": "1103 15:17:50.942003"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 40, 
+            "label": "40: fire6/expand1x1", 
+            "time_ms": 0.307872, 
+            "time_s": 0.000307872, 
+            "timestamp": "1103 15:17:50.942006"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 41, 
+            "label": "41: fire6/relu_expand1x1", 
+            "time_ms": 0.01024, 
+            "time_s": 1.024e-05, 
+            "timestamp": "1103 15:17:50.942009"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 41, 
+            "label": "41: fire6/relu_expand1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.942013"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 42, 
+            "label": "42: fire6/expand3x3", 
+            "time_ms": 0.075936, 
+            "time_s": 7.5936e-05, 
+            "timestamp": "1103 15:17:50.942015"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 42, 
+            "label": "42: fire6/expand3x3", 
+            "time_ms": 0.190336, 
+            "time_s": 0.00019033600000000002, 
+            "timestamp": "1103 15:17:50.942018"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 43, 
+            "label": "43: fire6/relu_expand3x3", 
+            "time_ms": 0.01024, 
+            "time_s": 1.024e-05, 
+            "timestamp": "1103 15:17:50.942021"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 43, 
+            "label": "43: fire6/relu_expand3x3", 
+            "time_ms": 0.001696, 
+            "time_s": 1.6960000000000002e-06, 
+            "timestamp": "1103 15:17:50.942024"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 44, 
+            "label": "44: fire6/concat", 
+            "time_ms": 0.027872, 
+            "time_s": 2.7872e-05, 
+            "timestamp": "1103 15:17:50.942029"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 44, 
+            "label": "44: fire6/concat", 
+            "time_ms": 0.219328, 
+            "time_s": 0.000219328, 
+            "timestamp": "1103 15:17:50.942036"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 45, 
+            "label": "45: fire7/squeeze1x1", 
+            "time_ms": 0.089088, 
+            "time_s": 8.9088e-05, 
+            "timestamp": "1103 15:17:50.942039"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 45, 
+            "label": "45: fire7/squeeze1x1", 
+            "time_ms": 0.142624, 
+            "time_s": 0.000142624, 
+            "timestamp": "1103 15:17:50.942042"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 46, 
+            "label": "46: fire7/relu_squeeze1x1", 
+            "time_ms": 0.008256, 
+            "time_s": 8.256e-06, 
+            "timestamp": "1103 15:17:50.942045"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 46, 
+            "label": "46: fire7/relu_squeeze1x1", 
+            "time_ms": 0.001984, 
+            "time_s": 1.984e-06, 
+            "timestamp": "1103 15:17:50.942049"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 47, 
+            "label": "47: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:50.942051"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 47, 
+            "label": "47: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001888, 
+            "time_s": 1.888e-06, 
+            "timestamp": "1103 15:17:50.942055"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 48, 
+            "label": "48: fire7/expand1x1", 
+            "time_ms": 0.058368, 
+            "time_s": 5.836800000000001e-05, 
+            "timestamp": "1103 15:17:50.942059"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 48, 
+            "label": "48: fire7/expand1x1", 
+            "time_ms": 0.315168, 
+            "time_s": 0.000315168, 
+            "timestamp": "1103 15:17:50.942061"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 49, 
+            "label": "49: fire7/relu_expand1x1", 
+            "time_ms": 0.00976, 
+            "time_s": 9.76e-06, 
+            "timestamp": "1103 15:17:50.942065"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 49, 
+            "label": "49: fire7/relu_expand1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.942067"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 50, 
+            "label": "50: fire7/expand3x3", 
+            "time_ms": 0.07568, 
+            "time_s": 7.568e-05, 
+            "timestamp": "1103 15:17:50.942070"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 50, 
+            "label": "50: fire7/expand3x3", 
+            "time_ms": 0.18912, 
+            "time_s": 0.00018912, 
+            "timestamp": "1103 15:17:50.942073"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 51, 
+            "label": "51: fire7/relu_expand3x3", 
+            "time_ms": 0.010016, 
+            "time_s": 1.0016e-05, 
+            "timestamp": "1103 15:17:50.942076"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 51, 
+            "label": "51: fire7/relu_expand3x3", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.942080"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 52, 
+            "label": "52: fire7/concat", 
+            "time_ms": 0.028288, 
+            "time_s": 2.8288e-05, 
+            "timestamp": "1103 15:17:50.942082"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 52, 
+            "label": "52: fire7/concat", 
+            "time_ms": 0.221024, 
+            "time_s": 0.000221024, 
+            "timestamp": "1103 15:17:50.942085"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 53, 
+            "label": "53: fire8/squeeze1x1", 
+            "time_ms": 0.087712, 
+            "time_s": 8.7712e-05, 
+            "timestamp": "1103 15:17:50.942087"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 53, 
+            "label": "53: fire8/squeeze1x1", 
+            "time_ms": 0.14848, 
+            "time_s": 0.00014848000000000001, 
+            "timestamp": "1103 15:17:50.942090"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 54, 
+            "label": "54: fire8/relu_squeeze1x1", 
+            "time_ms": 0.00896, 
+            "time_s": 8.959999999999999e-06, 
+            "timestamp": "1103 15:17:50.942093"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 54, 
+            "label": "54: fire8/relu_squeeze1x1", 
+            "time_ms": 0.001728, 
+            "time_s": 1.728e-06, 
+            "timestamp": "1103 15:17:50.942097"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 55, 
+            "label": "55: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:50.942101"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 55, 
+            "label": "55: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001152, 
+            "time_s": 1.1520000000000002e-06, 
+            "timestamp": "1103 15:17:50.942103"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 56, 
+            "label": "56: fire8/expand1x1", 
+            "time_ms": 0.100416, 
+            "time_s": 0.00010041600000000001, 
+            "timestamp": "1103 15:17:50.942106"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 56, 
+            "label": "56: fire8/expand1x1", 
+            "time_ms": 0.308, 
+            "time_s": 0.000308, 
+            "timestamp": "1103 15:17:50.942109"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 57, 
+            "label": "57: fire8/relu_expand1x1", 
+            "time_ms": 0.01056, 
+            "time_s": 1.056e-05, 
+            "timestamp": "1103 15:17:50.942112"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 57, 
+            "label": "57: fire8/relu_expand1x1", 
+            "time_ms": 0.001792, 
+            "time_s": 1.792e-06, 
+            "timestamp": "1103 15:17:50.942116"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 58, 
+            "label": "58: fire8/expand3x3", 
+            "time_ms": 0.111872, 
+            "time_s": 0.000111872, 
+            "timestamp": "1103 15:17:50.942118"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 58, 
+            "label": "58: fire8/expand3x3", 
+            "time_ms": 0.4608, 
+            "time_s": 0.0004608, 
+            "timestamp": "1103 15:17:50.942121"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 59, 
+            "label": "59: fire8/relu_expand3x3", 
+            "time_ms": 0.011264, 
+            "time_s": 1.1264e-05, 
+            "timestamp": "1103 15:17:50.942124"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 59, 
+            "label": "59: fire8/relu_expand3x3", 
+            "time_ms": 0.001696, 
+            "time_s": 1.6960000000000002e-06, 
+            "timestamp": "1103 15:17:50.942127"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 60, 
+            "label": "60: fire8/concat", 
+            "time_ms": 0.033824, 
+            "time_s": 3.3824e-05, 
+            "timestamp": "1103 15:17:50.942131"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 60, 
+            "label": "60: fire8/concat", 
+            "time_ms": 0.22848, 
+            "time_s": 0.00022847999999999998, 
+            "timestamp": "1103 15:17:50.942133"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 61, 
+            "label": "61: pool8", 
+            "time_ms": 0.037984, 
+            "time_s": 3.7984e-05, 
+            "timestamp": "1103 15:17:50.942137"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 61, 
+            "label": "61: pool8", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:50.942139"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 0.092128, 
+            "time_s": 9.212800000000001e-05, 
+            "timestamp": "1103 15:17:50.942142"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 0.098592, 
+            "time_s": 9.859200000000001e-05, 
+            "timestamp": "1103 15:17:50.942145"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.009216, 
+            "time_s": 9.216000000000001e-06, 
+            "timestamp": "1103 15:17:50.942148"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.942152"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001408, 
+            "time_s": 1.408e-06, 
+            "timestamp": "1103 15:17:50.942154"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001728, 
+            "time_s": 1.728e-06, 
+            "timestamp": "1103 15:17:50.942157"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 0.048128, 
+            "time_s": 4.8128e-05, 
+            "timestamp": "1103 15:17:50.942160"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 0.082944, 
+            "time_s": 8.294400000000001e-05, 
+            "timestamp": "1103 15:17:50.942163"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 0.009024, 
+            "time_s": 9.024e-06, 
+            "timestamp": "1103 15:17:50.942167"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 0.001792, 
+            "time_s": 1.792e-06, 
+            "timestamp": "1103 15:17:50.942169"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 0.058368, 
+            "time_s": 5.836800000000001e-05, 
+            "timestamp": "1103 15:17:50.942173"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 0.166592, 
+            "time_s": 0.000166592, 
+            "timestamp": "1103 15:17:50.942178"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 0.009184, 
+            "time_s": 9.183999999999999e-06, 
+            "timestamp": "1103 15:17:50.942183"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.942186"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 0.015168, 
+            "time_s": 1.5168e-05, 
+            "timestamp": "1103 15:17:50.942189"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 0.021504, 
+            "time_s": 2.1504e-05, 
+            "timestamp": "1103 15:17:50.942193"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 0.019808, 
+            "time_s": 1.9808e-05, 
+            "timestamp": "1103 15:17:50.942195"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 0.001344, 
+            "time_s": 1.344e-06, 
+            "timestamp": "1103 15:17:50.942198"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 0.138592, 
+            "time_s": 0.000138592, 
+            "timestamp": "1103 15:17:50.942201"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 1.68243, 
+            "time_s": 0.0016824300000000002, 
+            "timestamp": "1103 15:17:50.942204"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 0.012736, 
+            "time_s": 1.2736000000000001e-05, 
+            "timestamp": "1103 15:17:50.942208"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:50.942210"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 0.01744, 
+            "time_s": 1.7440000000000002e-05, 
+            "timestamp": "1103 15:17:50.942214"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 0.001664, 
+            "time_s": 1.6639999999999999e-06, 
+            "timestamp": "1103 15:17:50.942216"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 0.012288, 
+            "time_s": 1.2288e-05, 
+            "timestamp": "1103 15:17:50.942219"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:50.942222"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 10.2731, 
+        "time_bw_s": 0.0102731, 
+        "time_fw_ms": 3.43981, 
+        "time_fw_s": 0.00343981, 
+        "time_fwbw_ms": 14.2499, 
+        "time_fwbw_s": 0.014249900000000001, 
+        "time_total_ms": 14.2499, 
+        "time_total_ms_kernel_0": 14.2499, 
+        "time_total_s": 0.014249900000000001, 
+        "time_total_s_kernel_0": 0.014249900000000001, 
+        "total_execution_time": 0.0
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_BATCH_SIZE": 2, 
+        "REAL_ENV_CK_CAFFE_ITERATIONS": 25000, 
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-caffe/program/caffe/tmp/tmp-vEyJU4.prototxt", 
+        "execution_time": 0.0, 
+        "execution_time_with_module": 2.8312950134277344, 
+        "memory_bytes": 106120408, 
+        "memory_kbytes": 106120.408, 
+        "memory_mbytes": 106.120408, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.004096, 
+            "time_s": 4.096e-06, 
+            "timestamp": "1103 15:17:54.028394"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.0016, 
+            "time_s": 1.6000000000000001e-06, 
+            "timestamp": "1103 15:17:54.028399"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 0.281184, 
+            "time_s": 0.00028118399999999997, 
+            "timestamp": "1103 15:17:54.028403"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 0.641376, 
+            "time_s": 0.0006413759999999999, 
+            "timestamp": "1103 15:17:54.028405"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 0.101664, 
+            "time_s": 0.00010166400000000001, 
+            "timestamp": "1103 15:17:54.028409"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 0.001792, 
+            "time_s": 1.792e-06, 
+            "timestamp": "1103 15:17:54.028411"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 0.089024, 
+            "time_s": 8.902400000000001e-05, 
+            "timestamp": "1103 15:17:54.028415"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028419"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 0.050208, 
+            "time_s": 5.0208000000000004e-05, 
+            "timestamp": "1103 15:17:54.028421"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 0.169664, 
+            "time_s": 0.000169664, 
+            "timestamp": "1103 15:17:54.028424"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 0.009216, 
+            "time_s": 9.216000000000001e-06, 
+            "timestamp": "1103 15:17:54.028427"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028430"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.00144, 
+            "time_s": 1.4400000000000002e-06, 
+            "timestamp": "1103 15:17:54.028434"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.00144, 
+            "time_s": 1.4400000000000002e-06, 
+            "timestamp": "1103 15:17:54.028436"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 0.043008, 
+            "time_s": 4.3008e-05, 
+            "timestamp": "1103 15:17:54.028439"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 0.361312, 
+            "time_s": 0.000361312, 
+            "timestamp": "1103 15:17:54.028442"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 0.011264, 
+            "time_s": 1.1264e-05, 
+            "timestamp": "1103 15:17:54.028445"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 0.001952, 
+            "time_s": 1.952e-06, 
+            "timestamp": "1103 15:17:54.028448"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 0.069248, 
+            "time_s": 6.924800000000001e-05, 
+            "timestamp": "1103 15:17:54.028451"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 0.339712, 
+            "time_s": 0.00033971200000000004, 
+            "timestamp": "1103 15:17:54.028455"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 0.011296, 
+            "time_s": 1.1296e-05, 
+            "timestamp": "1103 15:17:54.028457"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028460"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 0.034912, 
+            "time_s": 3.4912e-05, 
+            "timestamp": "1103 15:17:54.028463"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 0.224448, 
+            "time_s": 0.000224448, 
+            "timestamp": "1103 15:17:54.028466"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 0.058176, 
+            "time_s": 5.8176e-05, 
+            "timestamp": "1103 15:17:54.028470"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 0.136032, 
+            "time_s": 0.000136032, 
+            "timestamp": "1103 15:17:54.028472"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 0.010048, 
+            "time_s": 1.0048e-05, 
+            "timestamp": "1103 15:17:54.028475"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028478"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001984, 
+            "time_s": 1.984e-06, 
+            "timestamp": "1103 15:17:54.028481"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.0016, 
+            "time_s": 1.6000000000000001e-06, 
+            "timestamp": "1103 15:17:54.028484"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 0.044064, 
+            "time_s": 4.4064e-05, 
+            "timestamp": "1103 15:17:54.028487"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 0.363712, 
+            "time_s": 0.000363712, 
+            "timestamp": "1103 15:17:54.028491"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 0.011264, 
+            "time_s": 1.1264e-05, 
+            "timestamp": "1103 15:17:54.028493"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 0.001504, 
+            "time_s": 1.504e-06, 
+            "timestamp": "1103 15:17:54.028496"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 0.066784, 
+            "time_s": 6.6784e-05, 
+            "timestamp": "1103 15:17:54.028499"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 0.337632, 
+            "time_s": 0.000337632, 
+            "timestamp": "1103 15:17:54.028502"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 0.01168, 
+            "time_s": 1.168e-05, 
+            "timestamp": "1103 15:17:54.028506"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 0.0016, 
+            "time_s": 1.6000000000000001e-06, 
+            "timestamp": "1103 15:17:54.028508"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 0.034976, 
+            "time_s": 3.4976e-05, 
+            "timestamp": "1103 15:17:54.028512"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 0.223296, 
+            "time_s": 0.000223296, 
+            "timestamp": "1103 15:17:54.028514"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: fire4/squeeze1x1", 
+            "time_ms": 0.05632, 
+            "time_s": 5.632e-05, 
+            "timestamp": "1103 15:17:54.028517"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 20, 
+            "label": "20: fire4/squeeze1x1", 
+            "time_ms": 0.134144, 
+            "time_s": 0.00013414400000000002, 
+            "timestamp": "1103 15:17:54.028524"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: fire4/relu_squeeze1x1", 
+            "time_ms": 0.009792, 
+            "time_s": 9.792e-06, 
+            "timestamp": "1103 15:17:54.028532"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 21, 
+            "label": "21: fire4/relu_squeeze1x1", 
+            "time_ms": 0.001824, 
+            "time_s": 1.8240000000000002e-06, 
+            "timestamp": "1103 15:17:54.028535"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001824, 
+            "time_s": 1.8240000000000002e-06, 
+            "timestamp": "1103 15:17:54.028538"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 22, 
+            "label": "22: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001696, 
+            "time_s": 1.6960000000000002e-06, 
+            "timestamp": "1103 15:17:54.028542"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: fire4/expand1x1", 
+            "time_ms": 0.082944, 
+            "time_s": 8.294400000000001e-05, 
+            "timestamp": "1103 15:17:54.028544"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 23, 
+            "label": "23: fire4/expand1x1", 
+            "time_ms": 0.344352, 
+            "time_s": 0.00034435199999999997, 
+            "timestamp": "1103 15:17:54.028548"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: fire4/relu_expand1x1", 
+            "time_ms": 0.03024, 
+            "time_s": 3.024e-05, 
+            "timestamp": "1103 15:17:54.028550"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 24, 
+            "label": "24: fire4/relu_expand1x1", 
+            "time_ms": 0.001888, 
+            "time_s": 1.888e-06, 
+            "timestamp": "1103 15:17:54.028553"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: fire4/expand3x3", 
+            "time_ms": 0.143328, 
+            "time_s": 0.00014332800000000002, 
+            "timestamp": "1103 15:17:54.028556"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 25, 
+            "label": "25: fire4/expand3x3", 
+            "time_ms": 0.623552, 
+            "time_s": 0.000623552, 
+            "timestamp": "1103 15:17:54.028559"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: fire4/relu_expand3x3", 
+            "time_ms": 0.029696, 
+            "time_s": 2.9696e-05, 
+            "timestamp": "1103 15:17:54.028563"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 26, 
+            "label": "26: fire4/relu_expand3x3", 
+            "time_ms": 0.0016, 
+            "time_s": 1.6000000000000001e-06, 
+            "timestamp": "1103 15:17:54.028565"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: fire4/concat", 
+            "time_ms": 0.060672, 
+            "time_s": 6.0672e-05, 
+            "timestamp": "1103 15:17:54.028568"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 27, 
+            "label": "27: fire4/concat", 
+            "time_ms": 0.237248, 
+            "time_s": 0.000237248, 
+            "timestamp": "1103 15:17:54.028571"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: pool4", 
+            "time_ms": 0.064512, 
+            "time_s": 6.4512e-05, 
+            "timestamp": "1103 15:17:54.028574"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 28, 
+            "label": "28: pool4", 
+            "time_ms": 0.00112, 
+            "time_s": 1.1199999999999999e-06, 
+            "timestamp": "1103 15:17:54.028576"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 0.061728, 
+            "time_s": 6.1728e-05, 
+            "timestamp": "1103 15:17:54.028579"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 0.09696, 
+            "time_s": 9.696000000000001e-05, 
+            "timestamp": "1103 15:17:54.028583"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 0.008544, 
+            "time_s": 8.544e-06, 
+            "timestamp": "1103 15:17:54.028585"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028589"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:54.028591"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001376, 
+            "time_s": 1.376e-06, 
+            "timestamp": "1103 15:17:54.028594"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 0.042336, 
+            "time_s": 4.2336e-05, 
+            "timestamp": "1103 15:17:54.028597"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 0.09488, 
+            "time_s": 9.488000000000001e-05, 
+            "timestamp": "1103 15:17:54.028600"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 0.009216, 
+            "time_s": 9.216000000000001e-06, 
+            "timestamp": "1103 15:17:54.028604"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028606"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 0.058336, 
+            "time_s": 5.8336e-05, 
+            "timestamp": "1103 15:17:54.028609"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 0.337024, 
+            "time_s": 0.000337024, 
+            "timestamp": "1103 15:17:54.028612"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 0.009216, 
+            "time_s": 9.216000000000001e-06, 
+            "timestamp": "1103 15:17:54.028615"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 0.001664, 
+            "time_s": 1.6639999999999999e-06, 
+            "timestamp": "1103 15:17:54.028619"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 0.021408, 
+            "time_s": 2.1408e-05, 
+            "timestamp": "1103 15:17:54.028621"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 0.226208, 
+            "time_s": 0.00022620799999999999, 
+            "timestamp": "1103 15:17:54.028625"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: fire6/squeeze1x1", 
+            "time_ms": 0.066528, 
+            "time_s": 6.652800000000001e-05, 
+            "timestamp": "1103 15:17:54.028627"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 37, 
+            "label": "37: fire6/squeeze1x1", 
+            "time_ms": 0.111488, 
+            "time_s": 0.000111488, 
+            "timestamp": "1103 15:17:54.028630"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: fire6/relu_squeeze1x1", 
+            "time_ms": 0.008192, 
+            "time_s": 8.192e-06, 
+            "timestamp": "1103 15:17:54.028633"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 38, 
+            "label": "38: fire6/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028636"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 39, 
+            "label": "39: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001696, 
+            "time_s": 1.6960000000000002e-06, 
+            "timestamp": "1103 15:17:54.028640"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 39, 
+            "label": "39: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001248, 
+            "time_s": 1.248e-06, 
+            "timestamp": "1103 15:17:54.028642"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 40, 
+            "label": "40: fire6/expand1x1", 
+            "time_ms": 0.06384, 
+            "time_s": 6.384e-05, 
+            "timestamp": "1103 15:17:54.028645"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 40, 
+            "label": "40: fire6/expand1x1", 
+            "time_ms": 0.306112, 
+            "time_s": 0.000306112, 
+            "timestamp": "1103 15:17:54.028648"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 41, 
+            "label": "41: fire6/relu_expand1x1", 
+            "time_ms": 0.0104, 
+            "time_s": 1.04e-05, 
+            "timestamp": "1103 15:17:54.028651"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 41, 
+            "label": "41: fire6/relu_expand1x1", 
+            "time_ms": 0.001824, 
+            "time_s": 1.8240000000000002e-06, 
+            "timestamp": "1103 15:17:54.028655"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 42, 
+            "label": "42: fire6/expand3x3", 
+            "time_ms": 0.077088, 
+            "time_s": 7.7088e-05, 
+            "timestamp": "1103 15:17:54.028657"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 42, 
+            "label": "42: fire6/expand3x3", 
+            "time_ms": 0.188224, 
+            "time_s": 0.00018822400000000002, 
+            "timestamp": "1103 15:17:54.028661"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 43, 
+            "label": "43: fire6/relu_expand3x3", 
+            "time_ms": 0.01024, 
+            "time_s": 1.024e-05, 
+            "timestamp": "1103 15:17:54.028663"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 43, 
+            "label": "43: fire6/relu_expand3x3", 
+            "time_ms": 0.001056, 
+            "time_s": 1.0560000000000001e-06, 
+            "timestamp": "1103 15:17:54.028666"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 44, 
+            "label": "44: fire6/concat", 
+            "time_ms": 0.028672, 
+            "time_s": 2.8672e-05, 
+            "timestamp": "1103 15:17:54.028671"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 44, 
+            "label": "44: fire6/concat", 
+            "time_ms": 0.217952, 
+            "time_s": 0.00021795200000000002, 
+            "timestamp": "1103 15:17:54.028678"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 45, 
+            "label": "45: fire7/squeeze1x1", 
+            "time_ms": 0.087744, 
+            "time_s": 8.7744e-05, 
+            "timestamp": "1103 15:17:54.028681"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 45, 
+            "label": "45: fire7/squeeze1x1", 
+            "time_ms": 0.145664, 
+            "time_s": 0.000145664, 
+            "timestamp": "1103 15:17:54.028684"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 46, 
+            "label": "46: fire7/relu_squeeze1x1", 
+            "time_ms": 0.008544, 
+            "time_s": 8.544e-06, 
+            "timestamp": "1103 15:17:54.028687"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 46, 
+            "label": "46: fire7/relu_squeeze1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028690"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 47, 
+            "label": "47: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:54.028693"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 47, 
+            "label": "47: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001376, 
+            "time_s": 1.376e-06, 
+            "timestamp": "1103 15:17:54.028697"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 48, 
+            "label": "48: fire7/expand1x1", 
+            "time_ms": 0.059392, 
+            "time_s": 5.9392e-05, 
+            "timestamp": "1103 15:17:54.028699"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 48, 
+            "label": "48: fire7/expand1x1", 
+            "time_ms": 0.30608, 
+            "time_s": 0.00030608, 
+            "timestamp": "1103 15:17:54.028702"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 49, 
+            "label": "49: fire7/relu_expand1x1", 
+            "time_ms": 0.009856, 
+            "time_s": 9.856e-06, 
+            "timestamp": "1103 15:17:54.028705"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 49, 
+            "label": "49: fire7/relu_expand1x1", 
+            "time_ms": 0.001056, 
+            "time_s": 1.0560000000000001e-06, 
+            "timestamp": "1103 15:17:54.028708"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 50, 
+            "label": "50: fire7/expand3x3", 
+            "time_ms": 0.074848, 
+            "time_s": 7.4848e-05, 
+            "timestamp": "1103 15:17:54.028712"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 50, 
+            "label": "50: fire7/expand3x3", 
+            "time_ms": 0.193472, 
+            "time_s": 0.000193472, 
+            "timestamp": "1103 15:17:54.028714"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 51, 
+            "label": "51: fire7/relu_expand3x3", 
+            "time_ms": 0.01024, 
+            "time_s": 1.024e-05, 
+            "timestamp": "1103 15:17:54.028717"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 51, 
+            "label": "51: fire7/relu_expand3x3", 
+            "time_ms": 0.001792, 
+            "time_s": 1.792e-06, 
+            "timestamp": "1103 15:17:54.028720"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 52, 
+            "label": "52: fire7/concat", 
+            "time_ms": 0.028384, 
+            "time_s": 2.8384e-05, 
+            "timestamp": "1103 15:17:54.028723"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 52, 
+            "label": "52: fire7/concat", 
+            "time_ms": 0.218048, 
+            "time_s": 0.00021804799999999998, 
+            "timestamp": "1103 15:17:54.028726"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 53, 
+            "label": "53: fire8/squeeze1x1", 
+            "time_ms": 0.087904, 
+            "time_s": 8.7904e-05, 
+            "timestamp": "1103 15:17:54.028729"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 53, 
+            "label": "53: fire8/squeeze1x1", 
+            "time_ms": 0.146688, 
+            "time_s": 0.00014668800000000002, 
+            "timestamp": "1103 15:17:54.028733"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 54, 
+            "label": "54: fire8/relu_squeeze1x1", 
+            "time_ms": 0.008256, 
+            "time_s": 8.256e-06, 
+            "timestamp": "1103 15:17:54.028735"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 54, 
+            "label": "54: fire8/relu_squeeze1x1", 
+            "time_ms": 0.000864, 
+            "time_s": 8.64e-07, 
+            "timestamp": "1103 15:17:54.028738"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 55, 
+            "label": "55: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:54.028741"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 55, 
+            "label": "55: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001664, 
+            "time_s": 1.6639999999999999e-06, 
+            "timestamp": "1103 15:17:54.028744"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 56, 
+            "label": "56: fire8/expand1x1", 
+            "time_ms": 0.09728, 
+            "time_s": 9.728e-05, 
+            "timestamp": "1103 15:17:54.028748"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 56, 
+            "label": "56: fire8/expand1x1", 
+            "time_ms": 0.307104, 
+            "time_s": 0.000307104, 
+            "timestamp": "1103 15:17:54.028751"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 57, 
+            "label": "57: fire8/relu_expand1x1", 
+            "time_ms": 0.010272, 
+            "time_s": 1.0272000000000001e-05, 
+            "timestamp": "1103 15:17:54.028753"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 57, 
+            "label": "57: fire8/relu_expand1x1", 
+            "time_ms": 0.001216, 
+            "time_s": 1.216e-06, 
+            "timestamp": "1103 15:17:54.028756"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 58, 
+            "label": "58: fire8/expand3x3", 
+            "time_ms": 0.1128, 
+            "time_s": 0.0001128, 
+            "timestamp": "1103 15:17:54.028759"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 58, 
+            "label": "58: fire8/expand3x3", 
+            "time_ms": 0.462848, 
+            "time_s": 0.00046284799999999997, 
+            "timestamp": "1103 15:17:54.028762"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 59, 
+            "label": "59: fire8/relu_expand3x3", 
+            "time_ms": 0.011264, 
+            "time_s": 1.1264e-05, 
+            "timestamp": "1103 15:17:54.028765"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 59, 
+            "label": "59: fire8/relu_expand3x3", 
+            "time_ms": 0.001376, 
+            "time_s": 1.376e-06, 
+            "timestamp": "1103 15:17:54.028769"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 60, 
+            "label": "60: fire8/concat", 
+            "time_ms": 0.033632, 
+            "time_s": 3.3632000000000006e-05, 
+            "timestamp": "1103 15:17:54.028771"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 60, 
+            "label": "60: fire8/concat", 
+            "time_ms": 0.2304, 
+            "time_s": 0.0002304, 
+            "timestamp": "1103 15:17:54.028774"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 61, 
+            "label": "61: pool8", 
+            "time_ms": 0.037056, 
+            "time_s": 3.7056e-05, 
+            "timestamp": "1103 15:17:54.028777"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 61, 
+            "label": "61: pool8", 
+            "time_ms": 0.001888, 
+            "time_s": 1.888e-06, 
+            "timestamp": "1103 15:17:54.028780"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 0.09216, 
+            "time_s": 9.216000000000001e-05, 
+            "timestamp": "1103 15:17:54.028784"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 0.09952, 
+            "time_s": 9.952e-05, 
+            "timestamp": "1103 15:17:54.028786"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.009216, 
+            "time_s": 9.216000000000001e-06, 
+            "timestamp": "1103 15:17:54.028789"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.000864, 
+            "time_s": 8.64e-07, 
+            "timestamp": "1103 15:17:54.028792"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001856, 
+            "time_s": 1.856e-06, 
+            "timestamp": "1103 15:17:54.028795"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.001696, 
+            "time_s": 1.6960000000000002e-06, 
+            "timestamp": "1103 15:17:54.028798"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 0.048352, 
+            "time_s": 4.8352e-05, 
+            "timestamp": "1103 15:17:54.028801"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 0.083968, 
+            "time_s": 8.3968e-05, 
+            "timestamp": "1103 15:17:54.028805"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 0.00896, 
+            "time_s": 8.959999999999999e-06, 
+            "timestamp": "1103 15:17:54.028807"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028810"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 0.057952, 
+            "time_s": 5.7952e-05, 
+            "timestamp": "1103 15:17:54.028813"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 0.166912, 
+            "time_s": 0.00016691200000000002, 
+            "timestamp": "1103 15:17:54.028818"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 0.008576, 
+            "time_s": 8.576e-06, 
+            "timestamp": "1103 15:17:54.028825"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 0.001344, 
+            "time_s": 1.344e-06, 
+            "timestamp": "1103 15:17:54.028827"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 0.014592, 
+            "time_s": 1.4592000000000002e-05, 
+            "timestamp": "1103 15:17:54.028831"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 0.02336, 
+            "time_s": 2.336e-05, 
+            "timestamp": "1103 15:17:54.028833"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 0.019552, 
+            "time_s": 1.9552000000000002e-05, 
+            "timestamp": "1103 15:17:54.028836"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 0.001728, 
+            "time_s": 1.728e-06, 
+            "timestamp": "1103 15:17:54.028839"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 0.137696, 
+            "time_s": 0.000137696, 
+            "timestamp": "1103 15:17:54.028842"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 1.68944, 
+            "time_s": 0.0016894400000000002, 
+            "timestamp": "1103 15:17:54.028846"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 0.01328, 
+            "time_s": 1.328e-05, 
+            "timestamp": "1103 15:17:54.028848"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028851"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 0.016544, 
+            "time_s": 1.6544e-05, 
+            "timestamp": "1103 15:17:54.028854"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 0.001024, 
+            "time_s": 1.024e-06, 
+            "timestamp": "1103 15:17:54.028857"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 0.012288, 
+            "time_s": 1.2288e-05, 
+            "timestamp": "1103 15:17:54.028859"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 0.002048, 
+            "time_s": 2.048e-06, 
+            "timestamp": "1103 15:17:54.028862"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 10.2833, 
+        "time_bw_s": 0.0102833, 
+        "time_fw_ms": 3.46362, 
+        "time_fw_s": 0.00346362, 
+        "time_fwbw_ms": 14.2746, 
+        "time_fwbw_s": 0.0142746, 
+        "time_total_ms": 14.2746, 
+        "time_total_ms_kernel_0": 14.2746, 
+        "time_total_s": 0.0142746, 
+        "time_total_s_kernel_0": 0.0142746, 
+        "total_execution_time": 0.0
+      }
+    }
+  ], 
+  "choices": {
+    "cmd_key": "time_gpu", 
+    "compile_type": "dynamic", 
+    "compiler_flags": {}, 
+    "cpu_freq": "max", 
+    "data_uoa": "caffe", 
+    "dataset_file": "", 
+    "device_cfg": {}, 
+    "device_id": "", 
+    "energy": "no", 
+    "env": {
+      "CK_CAFFE_BATCH_SIZE": 2, 
+      "CK_CAFFE_GPU_ID": 0, 
+      "CK_CAFFE_ITERATIONS": 25000, 
+      "CK_CAFFE_MODEL": "/home/anton/CK_REPOS/ck-caffe/program/caffe/tmp/tmp-Xc2UmX.prototxt", 
+      "CK_CPU_FREQUENCY": "max", 
+      "CK_GPU_FREQUENCY": "max"
+    }, 
+    "gpu_freq": "max", 
+    "host_os": "linux-64", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "no_state_check": "yes", 
+    "repeat": 1, 
+    "skip_calibration": "yes", 
+    "skip_print_timers": "yes", 
+    "target": "", 
+    "target_os": "linux-64", 
+    "target_os_bits": "64"
+  }, 
+  "choices_order": [
+    "##env#CK_CAFFE_BATCH_SIZE"
+  ], 
+  "features": {
+    "compiler_version": {
+      "list": [], 
+      "raw": "", 
+      "str": ""
+    }, 
+    "number_of_selected_compiler_flags": 0, 
+    "platform": {
+      "cpu": {
+        "all_freqs": {}, 
+        "cpu_abi": "", 
+        "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+        "current_freq": {
+          "0": 1200.132, 
+          "1": 1257.992, 
+          "10": 1276.589, 
+          "11": 1700.292, 
+          "12": 1204.625, 
+          "13": 1243.078, 
+          "14": 1578.914, 
+          "15": 1609.46, 
+          "16": 1209.207, 
+          "17": 1596.164, 
+          "18": 1201.3, 
+          "19": 1303.992, 
+          "2": 1497.246, 
+          "3": 1234.632, 
+          "4": 1599.308, 
+          "5": 1200.042, 
+          "6": 1200.042, 
+          "7": 1501.109, 
+          "8": 1199.953, 
+          "9": 1200.132
+        }, 
+        "max_freq": {
+          "0": 3000.0, 
+          "1": 3000.0, 
+          "10": 3000.0, 
+          "11": 3000.0, 
+          "12": 3000.0, 
+          "13": 3000.0, 
+          "14": 3000.0, 
+          "15": 3000.0, 
+          "16": 3000.0, 
+          "17": 3000.0, 
+          "18": 3000.0, 
+          "19": 3000.0, 
+          "2": 3000.0, 
+          "3": 3000.0, 
+          "4": 3000.0, 
+          "5": 3000.0, 
+          "6": 3000.0, 
+          "7": 3000.0, 
+          "8": 3000.0, 
+          "9": 3000.0
+        }, 
+        "name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+        "num_proc": "20", 
+        "sub_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+        "workload_automation": {
+          "device_config": {
+            "core_clusters": [
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0, 
+              0
+            ], 
+            "core_names": [
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+              "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz"
+            ]
+          }
+        }
+      }, 
+      "cpu_misc": {
+        "0": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "0", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "0", 
+          "cpu MHz": "1200.132", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1200.132, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "0", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "0", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "1": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "2", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "1", 
+          "cpu MHz": "1257.992", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1257.992, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "2", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "1", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "10": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "1", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "0", 
+          "cpu MHz": "1276.589", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1276.589, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "1", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "10", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "11": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "3", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "1", 
+          "cpu MHz": "1700.292", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1700.292, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "3", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "11", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "12": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "5", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "2", 
+          "cpu MHz": "1204.625", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1204.625, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "5", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "12", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "13": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "7", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "3", 
+          "cpu MHz": "1243.078", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1243.078, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "7", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "13", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "14": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "9", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "4", 
+          "cpu MHz": "1499.941", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1578.914, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "9", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "14", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "15": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "17", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "8", 
+          "cpu MHz": "1609.460", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1609.46, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "17", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "15", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "16": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "19", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "9", 
+          "cpu MHz": "1209.207", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1209.207, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "19", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "16", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "17": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "21", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "10", 
+          "cpu MHz": "1500.121", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1596.164, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "21", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "17", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "18": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "23", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "11", 
+          "cpu MHz": "1201.300", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1201.3, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "23", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "18", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "19": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "25", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "12", 
+          "cpu MHz": "1303.992", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1303.992, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "25", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "19", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "2": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "4", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "2", 
+          "cpu MHz": "1497.246", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1497.246, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "4", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "2", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "3": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "6", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "3", 
+          "cpu MHz": "1234.632", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1234.632, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "6", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "3", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "4": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "8", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "4", 
+          "cpu MHz": "1499.941", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1599.308, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "8", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "4", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "5": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "16", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "8", 
+          "cpu MHz": "1200.042", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1200.042, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "16", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "5", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "6": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "18", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "9", 
+          "cpu MHz": "1200.042", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1200.042, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "18", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "6", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "7": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "20", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "10", 
+          "cpu MHz": "1501.109", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1501.109, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "20", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "7", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "8": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "22", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "11", 
+          "cpu MHz": "1199.953", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1199.953, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "22", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "8", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }, 
+        "9": {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "24", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "12", 
+          "cpu MHz": "1200.132", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1200.132, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "24", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "9", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }
+      }, 
+      "cpu_new_format": "", 
+      "cpu_unique": [
+        {
+          "address sizes": "46 bits physical, 48 bits virtual", 
+          "apicid": "0", 
+          "bogomips": "4589.54", 
+          "bugs": "", 
+          "cache size": "25600 KB", 
+          "cache_alignment": "64", 
+          "ck_cpu_name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "ck_cpu_subname": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "clflush size": "64", 
+          "core id": "0", 
+          "cpu MHz": "1200.132", 
+          "cpu cores": "10", 
+          "cpu family": "6", 
+          "cpu_features": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "cpuid level": "15", 
+          "cur_freq": 1200.132, 
+          "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts", 
+          "fpu": "yes", 
+          "fpu_exception": "yes", 
+          "initial apicid": "0", 
+          "max_freq": 3000.0, 
+          "microcode": "0x2e", 
+          "model": "63", 
+          "model name": "Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz", 
+          "physical id": "0", 
+          "power management": "", 
+          "processor": "0", 
+          "siblings": "20", 
+          "stepping": "2", 
+          "vendor_id": "GenuineIntel", 
+          "wp": "yes"
+        }
+      ], 
+      "gpu": {
+        "name": "NVIDIA Corporation Device 1b80 (rev a1)", 
+        "vendor": "NVIDIA"
+      }, 
+      "gpu_misc": {}, 
+      "os": {
+        "bits": "64", 
+        "ck_os_base_uoa": "", 
+        "ck_os_uoa": "linux-64", 
+        "name": "Ubuntu 16.04.1 LTS", 
+        "name_long": "Linux-4.4.0-45-generic-x86_64-with-Ubuntu-16.04-xenial", 
+        "name_short": "Linux 4.4.0", 
+        "serial_number": ""
+      }, 
+      "os_misc": {}, 
+      "platform": {
+        "model": "HP Z640 Workstation", 
+        "name": "Hewlett-Packard (HP Z640 Workstation)", 
+        "vendor": "Hewlett-Packard"
+      }, 
+      "platform_misc": {}
+    }, 
+    "statistical_repetitions": 3
+  }
+}
