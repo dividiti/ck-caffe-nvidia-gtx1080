@@ -4,7 +4,7 @@
 
 **NB:** The Caffe experimental results are released with approval from General Motors.
 
-The Jupyter notebook ([view on github.com](https://github.com/dividiti/ck-caffe-nvidia-gtx1080/blob/master/script/analysis/ck-caffe-nvidia-gtx1080.20170518.ipynb); [view on nbviewer.jupyter.org](https://nbviewer.jupyter.org/github/dividiti/ck-caffe-nvidia-gtx1080/blob/master/script/analysis/ck-caffe-nvidia-gtx1080.20170518.ipynb?raw)) in this Collective Knowledge repository analyses the performance (execution time, memory consumption):
+The Jupyter notebook ([view on github.com](https://github.com/dividiti/ck-caffe-nvidia-gtx1080/blob/master/script/analysis/ck-caffe-nvidia-gtx1080.20170518.ipynb); [view on nbviewer.jupyter.org](https://nbviewer.jupyter.org/github/dividiti/ck-caffe-nvidia-gtx1080/blob/master/script/analysis/ck-caffe-nvidia-gtx1080.20170518.ipynb)) in this Collective Knowledge repository analyses the performance (execution time, memory consumption):
 - on **[dividiti](http://dividiti.com)**'s **velociti** Hewlett-Packard Z640 Workstation ([G1X62EA](http://h20195.www2.hp.com/v2/default.aspx?cc=ie&lc=en&oid=7528701)):
   - [Intel(R) Xeon(R) CPU E5-2650 v3](http://ark.intel.com/products/81705/Intel-Xeon-Processor-E5-2650-v3-25M-Cache-2_30-GHz):
     - 10 cores, 20 threads;
